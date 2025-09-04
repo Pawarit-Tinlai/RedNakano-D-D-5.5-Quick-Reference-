@@ -285,6 +285,10 @@ div.rule.active img {
   max-width: 80px;        /* จำกัดขนาด ไม่ให้ใหญ่เกิน */
   height: auto;           /* ปรับอัตราส่วนอัตโนมัติ */
   }
+  div.modal p {
+    position: relative;
+    z-index: 1;            /* ให้ข้อความซ้อนอยู่บน */
+  }
   
   /* --- Pane inside modal --- */
   div.pane {
@@ -361,3 +365,4 @@ div.rule.active img {
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
   
+
