@@ -23,9 +23,22 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // initialize
 
-  document.querySelectorAll('div.rule').forEach(e => {
-    e.addEventListener('click',show_rule.bind(null,e));
-  });
+function show_rule(rule, event) {
+  console.log('show_rules');
+
+  // หา window ที่อยู่ข้างใน rule
+  const window = rule.querySelector('.window');
+  if (window) {
+    window.classList.toggle('active');
+  }
+  
+  event.stopPropagation();
+}
+
+document.querySelectorAll('div.rule').forEach(rule => {
+  rule.addEventListener('click', show_rule.bind(null, rule));
+});
+
   document.querySelectorAll('div.blackout').forEach(e => {
     e.addEventListener('click',hide_rules);
   });
@@ -40,3 +53,4 @@
   toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   });
+
