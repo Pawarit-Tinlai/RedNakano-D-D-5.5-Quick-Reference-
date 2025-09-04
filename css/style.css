@@ -278,6 +278,13 @@ div.rule.active img {
     color: white;
     font-size: 120%;
   }
+   /* จัดการรูปภาพใน modal ไม่ให้บังข้อความ */
+  div.window img {
+  display: block;         /* ให้ภาพอยู่บรรทัดแยกของมันเอง */
+  margin: 8px auto;       /* จัดกึ่งกลาง */
+  max-width: 80px;        /* จำกัดขนาด ไม่ให้ใหญ่เกิน */
+  height: auto;           /* ปรับอัตราส่วนอัตโนมัติ */
+  }
   
   /* --- Pane inside modal --- */
   div.pane {
@@ -352,4 +359,5 @@ div.rule.active img {
 
   
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
   
