@@ -289,20 +289,6 @@ div.rule.active img {
     position: relative;
     z-index: 1;            /* ให้ข้อความซ้อนอยู่บน */
   }
-  .blackout {
-  position: fixed;   /* ครอบทั้งจอ */
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  z-index: 9998;
-  }
-
-  .window {
-  position: fixed;   /* หรือ absolute ถ้าผูกกับ container */
-  z-index: 9999;
-  }
-
   
   /* --- Pane inside modal --- */
   div.pane {
@@ -379,5 +365,6 @@ div.rule.active img {
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
   
+
 
 
