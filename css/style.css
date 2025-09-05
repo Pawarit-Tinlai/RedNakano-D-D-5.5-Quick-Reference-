@@ -156,17 +156,6 @@
   color: #fff; /* เปลี่ยนเป็นสีขาว */
   }
 
-  /* สำหรับโหมดกลางคืน */
-  body.dark-mode #actions h3 {
-  color: #e0e0e0; /* สีเทาสว่าง อ่านง่าย */
-  }
-
-  /* เวลา hover section ในโหมดกลางคืน */
-  body.dark-mode #actions:hover h3 {
-  color: #fff; /* ขาวสว่าง */
-  }
-
-
   /* ------------------------- General Rules ------------------------- */
 
   div.list {
@@ -275,4 +264,15 @@
     color: #ddd;
   }
 
+  /* สำหรับโหมดกลางคืน */
+  #actions body.dark-mode h3 {
+  color: #e0e0e0; /* สีเทาสว่าง อ่านง่าย */
+  }
+
+  /* เวลา hover section ในโหมดกลางคืน */
+  #actions:hover body.dark-mode h3 {
+  color: #fff; /* ขาวสว่าง */
+  }
+
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
