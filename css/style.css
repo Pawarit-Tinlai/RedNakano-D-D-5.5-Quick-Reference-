@@ -146,7 +146,7 @@
     margin-bottom: 15px;
     font-size: 1.2em;
     font-weight: bold;
-    color: #333; /* สีปกติ */
+    color: rgb(114, 114, 114); /* สีปกติ */
     transition: color 0.3s ease; /* ใส่ transition ให้เปลี่ยนสีลื่นขึ้น */
     border-bottom: 2px solid #ccc; /* เส้นใต้ (เลือกใส่หรือไม่ใส่ก็ได้) */
   }
@@ -275,4 +275,5 @@
   }
 
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 
