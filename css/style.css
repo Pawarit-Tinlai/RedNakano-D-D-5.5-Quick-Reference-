@@ -68,8 +68,7 @@
 
   /* Hover สีตามประเภท */
   section#movement:hover            { background: #000080; } /* Navy */
-  section#actions:hover             { background: #c40000; } /* DarkRed */
-  #actions:hover h3                 {color: #fff; /* เปลี่ยนเป็นสีขาว */}
+  section#actions:hover             { background: #980000; } /* DarkRed */
   section#bonus_actions:hover       { background: #FFD700; } /* Gold */
   section#reactions:hover           { background: #FF8C00; } /* DarkOrange */
   section#conditions:hover          { background: #006400; } /* DarkGreen */
@@ -151,7 +150,22 @@
     transition: color 0.3s ease; /* ใส่ transition ให้เปลี่ยนสีลื่นขึ้น */
     border-bottom: 2px solid #ccc; /* เส้นใต้ (เลือกใส่หรือไม่ใส่ก็ได้) */
   }
-  
+
+  /* เวลา hover section */
+  #actions:hover h3 {
+  color: #fff; /* เปลี่ยนเป็นสีขาว */
+  }
+
+  /* สำหรับโหมดกลางคืน */
+  body.dark-mode #actions h3 {
+  color: #e0e0e0; /* สีเทาสว่าง อ่านง่าย */
+  }
+
+  /* เวลา hover section ในโหมดกลางคืน */
+  body.dark-mode #actions:hover h3 {
+  color: #fff; /* ขาวสว่าง */
+  }
+
 
   /* ------------------------- General Rules ------------------------- */
 
