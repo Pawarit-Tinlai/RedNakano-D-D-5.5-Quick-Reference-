@@ -7,7 +7,7 @@
     text-transform: uppercase;
     font-weight: bold;
   }
-  h1 { font-size: 120%; }
+  h1 { font-size: 130%; }
   h2 { font-size: 100%; }
 
   /* ปิดการขยายถ้าเป็นภาษาไทย */
@@ -68,7 +68,8 @@
 
   /* Hover สีตามประเภท */
   section#movement:hover            { background: #000080; } /* Navy */
-  section#actions:hover             { background: #8B0000; } /* DarkRed */
+  section#actions:hover             { background: #c40000; } /* DarkRed */
+  #actions:hover h3                 {color: #fff; /* เปลี่ยนเป็นสีขาว */}
   section#bonus_actions:hover       { background: #FFD700; } /* Gold */
   section#reactions:hover           { background: #FF8C00; } /* DarkOrange */
   section#conditions:hover          { background: #006400; } /* DarkGreen */
@@ -141,6 +142,16 @@
     margin: 2ex 2em;
     border-radius: 1em; /* มุมโค้งถ้าต้องการ */
   }
+  #actions h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333; /* สีปกติ */
+    transition: color 0.3s ease; /* ใส่ transition ให้เปลี่ยนสีลื่นขึ้น */
+    border-bottom: 2px solid #ccc; /* เส้นใต้ (เลือกใส่หรือไม่ใส่ก็ได้) */
+  }
+  
 
   /* ------------------------- General Rules ------------------------- */
 
