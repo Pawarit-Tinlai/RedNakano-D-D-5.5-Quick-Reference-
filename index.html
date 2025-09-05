@@ -1618,6 +1618,790 @@
                 </div>
             </div>
         </section>
+        <section id="asst">
+            <h1>Ability Scores & Saving Throws</h1>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Strength.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Strength (STR)</h2>
+                        <p>ความแข็งแกร่ง</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Strength</h2>
+                                <div class="pane">
+                                    <p><i>วัดความแข็งแรงของร่างกาย กำลังกล้ามเนื้อ ความสามารถในการยกของหนัก ต่อยตี และใช้แรงโดยตรง</i></p>
+                                    <p><b>ความสำคัญ</b>: </p>
+                                    <ul>
+                                        <li>เป็นค่าหลักของคลาสสายกายภาพ เช่น Fighter, Barbarian, Paladin</li>
+                                        <li>ใช้คำนวณการโจมตีและความเสียหายของอาวุธประชิดที่อาศัยแรง</li>
+                                        <li>เกี่ยวข้องกับการแบกพกสิ่งของ (carrying capacity)</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>การพังประตูไม้ด้วยแรง</li>
+                                        <li>การยกหินใหญ่ขวางทาง</li>
+                                        <li>การโจมตีด้วยดาบใหญ่ (Greatsword)</li>
+                                    </ul>
+                                    <br>
+                                    <p><b>Strength Saving Throw</b></p>
+                                    <p><b>ความสำคัญ</b>: ใช้เมื่อต้องต่อต้านแรงกาย เช่น การถูกผลัก ล้ม หรือถูกจับกด ป้องกันการถูกบังคับให้ล้ม/เคลื่อนย้าย</p>
+                                    <p><b>ตัวอย่าง</b>: ร่างกายถูกพายุเวทผลักกระเด็น ต้องต้านแรงไว้</p>
+                                    <p class="icon">
+                                        <img src="icons/skills/Strength.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Dexterity.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Dexterity (DEX)</h2>
+                        <p>ความว่องไว</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Dexterity</h2>
+                                <div class="pane">
+                                    <p><i>วัดความว่องไว การตอบสนอง ความแม่นยำ และการทรงตัว</i></p>
+                                    <p><b>ความสำคัญ</b>: </p>
+                                    <ul>
+                                        <li>ค่าป้องกัน (Armor Class) ส่วนใหญ่ขึ้นกับ Dexterity</li>
+                                        <li>ใช้กับอาวุธระยะไกลและอาวุธ Finesse</li>
+                                        <li>สำคัญต่อการซ่อนตัว หลบเลี่ยง และการทำสิ่งที่ต้องใช้ความประณีต</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>การยิงธนูไปที่เป้าหมาย</li>
+                                        <li>การหลบลูกศรที่ยิงเข้ามา</li>
+                                        <li>การแอบผ่านยามโดยไม่ให้ถูกสังเกต</li>
+                                    </ul>
+                                    <br>
+                                    <p><b>Dexterity Saving Throw</b></p>
+                                    <p><b>ความสำคัญ</b>: ใช้เพื่อหลบเลี่ยงการโจมตีพื้นที่หรือกับดัก หนึ่งใน saving throw ที่เจอบ่อยที่สุด</p>
+                                    <p><b>ตัวอย่าง</b>: หลบลูกไฟ (Fireball) ที่ระเบิดกลางห้อง</p>
+                                    <p class="icon">
+                                        <img src="icons/skills/Dexterity.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Constitution.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Constitution (CON)</h2>
+                        <p>สุขภาพ</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Constitution</h2>
+                                <div class="pane">
+                                    <p><i>เป็นตัวแทนของความแข็งแรงภายในร่างกาย ความทนทาน ระบบการหายใจและภูมิคุ้มกัน</i></p>
+                                    <p><b>ความสำคัญ</b>: </p>
+                                    <ul>
+                                        <li>กำหนด Hit Points (HP) ซึ่งส่งผลโดยตรงต่อความอยู่รอด</li>
+                                        <li>มีผลต่อการรักษาสมาธิ (concentration) เมื่อร่ายเวทมนตร์</li>
+                                        <li>ใช้ต้านทานพิษ โรค และสภาพร่างกายที่กดดัน</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>การยืนทนพิษจากยาพิษ</li>
+                                        <li>การรักษาสมาธิระหว่างสู้รบเพื่อคงเวทมนตร์</li>
+                                        <li>การเดินทางในทะเลทรายโดยไม่หมดแรงเร็ว</li>
+                                    </ul>
+                                    <br>
+                                    <p><b>Constitution Saving Throw</b></p>
+                                    <p><b>ความสำคัญ</b>: ใช้ต้านทานสิ่งที่ส่งผลต่อร่างกาย เช่น พิษ ความหนาว หรือโรค ส่งผลโดยตรงต่อความอยู่รอด</p>
+                                    <p><b>ตัวอย่าง</b>: ไม่สลบจากพิษของแมงป่องยักษ์</p>
+                                    <p class="icon">
+                                        <img src="icons/skills/Constitution.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Intelligence.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Intelligence (INT)</h2>
+                        <p>ความฉลาด</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Intelligence</h2>
+                                <div class="pane">
+                                    <p><i>ตัวแทนของความรู้ การใช้เหตุผล การวิเคราะห์ และความเข้าใจในศาสตร์ต่าง ๆ</i></p>
+                                    <p><b>ความสำคัญ</b>: </p>
+                                    <ul>
+                                        <li>ใช้กับการตรวจสอบเชิงวิชาการ (Arcana, History, Investigation, Nature, Religion)</li>
+                                        <li>เป็นค่าหลักของนักเวท (Wizard) ช่างฝีมือ (Artificer)</li>
+                                        <li>สำคัญต่อการไขปริศนาและเข้าใจกลไก</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>การอ่านเวทมนตร์โบราณ</li>
+                                        <li>การสืบหาว่ากับดักถูกซ่อนไว้อย่างไร</li>
+                                        <li>การจดจำประวัติของอาณาจักรที่สูญหาย</li>
+                                    </ul>
+                                    <br>
+                                    <p><b>Intelligence Saving Throw</b></p>
+                                    <p><b>ความสำคัญ</b>: ใช้ต่อต้านเวทมนตร์ที่โจมตีจิตสติ ความคิด และภาพลวงตา แม้จะเจอน้อย แต่ถ้าล้มเหลวอาจมีผลหนัก</p>
+                                    <p><b>ตัวอย่าง</b>: ต่อต้านเวท Feeblemind ที่จะทำให้สติปัญญาหายไป</p>
+                                    <p class="icon">
+                                        <img src="icons/skills/Intelligence.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Wisdom.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Wisdom (WIS)</h2>
+                        <p>ประสบการณ์</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Wisdom</h2>
+                                <div class="pane">
+                                    <p><i>แสดงถึงสัญชาตญาณ ความเข้าใจรอบตัว การรับรู้ และการตัดสินใจเชิงจิตใจ</i></p>
+                                    <p><b>ความสำคัญ</b>: </p>
+                                    <ul>
+                                        <li>ใช้ตรวจจับ (Perception), เอาตัวรอด (Survival), การแพทย์ (Medicine), จับคนโกหก (Insight)</li>
+                                        <li>เป็นค่าหลักของนักบุญ (Cleric) ฤๅษี (Druid) พรานป่า (Ranger)</li>
+                                        <li>มักใช้ในสถานการณ์ที่เกี่ยวกับการสำรวจสิ่งต่างๆ</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>สังเกตเห็นรอยเท้าที่เพิ่งผ่านมา</li>
+                                        <li>รู้ว่าอีกฝ่ายโกหกหรือพูดจริง</li>
+                                        <li>เอาชีวิตรอดจากสิ่งต่างๆ</li>
+                                    </ul>
+                                    <br>
+                                    <p><b>Wisdom Saving Throw</b></p>
+                                    <p><b>ความสำคัญ</b>: ใช้ต่อต้านการควบคุมจิตใจหรือพลังจิตวิญญาณ เจอบ่อยมากเพราะเกี่ยวข้องกับเวทควบคุมจิตใจ</p>
+                                    <p><b>ตัวอย่าง</b>: พยายามต้านเวท Hold Person ที่ทำให้ร่างกายหยุดนิ่ง</p>
+                                    <p class="icon">
+                                        <img src="icons/skills/Wisdom.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Charisma.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Charisma (CHA)</h2>
+                        <p>เสน่ห์</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Charisma</h2>
+                                <div class="pane">
+                                    <p><i>ค่าที่สะท้อนถึงบุคลิกภาพ แรงดึงดูดใจ ความมั่นใจ และพลังใจ</i></p>
+                                    <p><b>ความสำคัญ</b>: </p>
+                                    <ul>
+                                        <li>ใช้ในปฏิสัมพันธ์ทางสังคม เช่น โน้มน้าวใจ (Persuasion), โกหก (Deception), ข่มขู่ (Intimidation), การแสดง (Performance)</li>
+                                        <li>เป็นค่าหลักของนักกวี (Bard) จอมเวทย์ (Sorcerer) ผู้ทำพันธะ (Warlock) นักรบสัจจะ (Paladin)</li>
+                                        <li>มีผลต่อเวทมนตร์ที่มาจากพลังใจและบุคลิก</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>โน้มน้าวให้ผู้คุมประตูปล่อยเข้าไปโดยไม่ต้องจ่ายเงิน</li>
+                                        <li>การข่มขู่โจรให้หนีไป</li>
+                                        <li>การแสดงดนตรีเพื่อสร้างแรงบันดาลใจให้ผู้คน</li>
+                                    </ul>
+                                    <br>
+                                    <p><b>Charisma Saving Throw</b></p>
+                                    <p><b>ความสำคัญ</b>: ใช้เพื่อรักษาความเป็นตัวเอง ต่อต้านพลังที่ต้องการกดข่มจิตวิญญาณ เจอน้อยที่สุด แต่สำคัญมากในกรณีเวทที่มีผลรุนแรง</p>
+                                    <p><b>ตัวอย่าง</b>: ต่อต้านเวท Banishment ไม่ให้ถูกส่งไปอีกมิติ</p>
+                                    <p class="icon">
+                                        <img src="icons/skills/Charisma.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Acrobatics.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Acrobatics</h2>
+                        <p>Ability: Dexterity (DEX)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Acrobatics</h2>
+                                <div class="pane">
+                                    <p><i>ความคล่องตัว การทรงตัว พลิกตัว หลบหลีกในสถานการณ์ที่ลื่น/แคบ/เสี่ยง</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>เดินเชือก/คานแคบ, วิ่งบนพื้นน้ำแข็งหรือดาดฟ้าเรือที่โคลง</li>
+                                        <li>กลิ้งตัว ตีลังกา กระโดดหลบเพื่อผ่านสิ่งกีดขวางอย่างคล่องแคล่ว</li>
+                                        <li>รักษาสมดุลเมื่อถูกชน ผลัก หรือต้องทรงตัวในพายุ</li>
+                                        <li>หนีจากการ Grapple: ทำการทอยเช็ค Dexterity (Acrobatics) เทียบค่า DC ของผู้จับ</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Acrobatics.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Animal_Handling.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Animal Handling</h2>
+                        <p>Ability: Wisdom (WIS)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Animal Handling</h2>
+                                <div class="pane">
+                                    <p><i>อ่านพฤติกรรมสัตว์ ทำให้สงบ เชื่อง หรือสั่งการฐานะผู้ควบคุมสัตว์/พาหนะ</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ทำให้ม้าตกใจสงบลง หรือควบคุมพาหนะในสถานการณ์เสี่ยง</li>
+                                        <li>อ่านอารมณ์/ตั้งใจของสัตว์ป่าเพื่อหลีกเลี่ยงการยั่วยุ</li>
+                                        <li>ช่วยฝึกหรือชักจูงสัตว์ให้ทำสิ่งง่าย ๆ</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Animal_Handling.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Arcana.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Arcana</h2>
+                        <p>Ability: Intelligence (INT)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Arcana</h2>
+                                <div class="pane">
+                                    <p><i>ความรู้ด้านเวทมนตร์ ไอเท็มเวท พิธีกรรม ธรรมชาติของพลังเวท และระเบียบกฎแห่งเวท</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>จำสกูลเวท ม้วนคาถา วงแหวนเวท และสัญลักษณ์ลี้ลับ</li>
+                                        <li>ระบุคุณสมบัติเวทคร่าว ๆ ของวัตถุหรือสิ่งปลูกสร้างเวท</li>
+                                        <li>เข้าใจผลกับดัก/พื้นที่เวทและวิธีหยุดยั้งเชิงทฤษฎี</li>
+                                        <li>ระบุเวทย์มนตร์ Identify a Spell: ทำการทอยเช็ค Intelligence (Arcana)เทียบค่า DC ของเวทย์ (DC=15+ระดับของเวทย์มนตร์)</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Arcana.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Athletics.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Athletics</h2>
+                        <p>Ability: Strength (STR)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Athletics</h2>
+                                <div class="pane">
+                                    <p><i>กำลังและความอึดในกิจกรรมทางกาย ปีน/ว่าย/กระโดด/ผลัก/ดัน/งัด/ง้าง ฯลฯ</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ปีนผาชัน เชือกเปียก หรือผนังลื่น</li>
+                                        <li>ว่ายในคลื่นแรงหรือกระแสน้ำวน</li>
+                                        <li>กระโดดไกล/สูงเกินปกติ หรือพังประตู/สิ่งกีดขวางด้วยแรง</li>
+                                        <li>ต่อสู้พละกำลัง เช่น ดันตัวไม่ให้ถูกผลักตกที่สูง</li>
+                                        <li>หนีจากการ Grapple: ทำการทอยเช็ค Strength (Athletics) เทียบค่า DC ของผู้จับ</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Athletics.svg">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Deception.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Deception</h2>
+                        <p>Ability: Charisma (CHA)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Deception</h2>
+                                <div class="pane">
+                                    <p><i>หลอกลวง บิดเบือน ทำทีเป็นผู้อื่น หรือปกปิดความจริงอย่างแนบเนียน</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>หลอกยาม/พ่อค้า ให้เชื่อเรื่องแต่ง</li>
+                                        <li>เล่นกลโกงระหว่างเสี่ยงโชคหรือการต่อรอง</li>
+                                        <li>สวมบท/ปลอมตัวแล้ววางตัวให้เนียนตามสถานการณ์</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Deception.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/History.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>History</h2>
+                        <p>Ability: Intelligence (INT)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>History</h2>
+                                <div class="pane">
+                                    <p><i>ความรู้ประวัติศาสตร์ บุคคลสำคัญ ราชวงศ์ สงคราม สนธิสัญญา และวัฒนธรรมโบราณ</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ระบุตราแผ่นดิน/สัญลักษณ์ตระกูลหรือกองทัพ ตามประวัติศาสตร์</li>
+                                        <li>จำเหตุการณ์สำคัญที่เกี่ยวข้องกับสถานที่หรือสิ่งประดิษฐ์</li>
+                                        <li>นำความรู้เก่ามาเชื่อมโยงเพื่อค้นเบาะแสปัจจุบัน</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/History.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Insight.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Insight</h2>
+                        <p>Ability: Wisdom (WIS)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Insight</h2>
+                                <div class="pane">
+                                    <p><i>อ่านอารมณ์ ตั้งใจ ความจริงใจ/โกหกจากท่าที คำพูด น้ำเสียง และพฤติกรรม</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>จับพิรุธว่าใครกำลังโกหกหรือปิดบังอะไร</li>
+                                        <li>คาดเดาปฏิกิริยาถัดไปของคู่สนทนา/ศัตรู</li>
+                                        <li>รู้ทันการโน้มน้าวหรือการข่มขู่ที่พยายามใช้เรา</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Insight.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Intimidation.svg" />
+                    </div>
+                    <div class="desc">
+                        <h2>Intimidation</h2>
+                        <p>Ability: Charisma (CHA)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Intimidation</h2>
+                                <div class="pane">
+                                    <p><i>กดดัน ข่มขวัญ หรือสร้างความเกรงขามเพื่อให้ผู้อื่นยอมทำตาม</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>รีดข้อมูลจากเชลยหรืออาชญากร</li>
+                                        <li>ทำให้พวกอันธพาลถอยโดยแสดงอาวุธ/กำลัง</li>
+                                        <li>ใช้ท่าที/คำพูดเฉียบคมจนอีกฝ่ายหวั่นเกรง</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Intimidation.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Investigation.svg" />
+                    </div>
+                    <div class="desc">
+                        <h2>Investigation</h2>
+                        <p>Ability: Intelligence (INT)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Investigation</h2>
+                                <div class="pane">
+                                    <p><i>สืบค้น วิเคราะห์ ตั้งสมมติฐานเพื่อหาข้อเท็จจริงจากเบาะแส/เอกสาร/กลไก</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>หาจุดซ่อนของวัตถุหรือทางลับจากร่องรอย</li>
+                                        <li>วิเคราะห์รอยเลือด/บาดแผลเพื่อสรุปสาเหตุการตาย</li>
+                                        <li>เข้าใจกลไกกับดักหรือจุดอ่อนโครงสร้าง</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Investigation.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Medicine.svg" />
+                    </div>
+                    <div class="desc">
+                        <h2>Medicine</h2>
+                        <p>Ability: Wisdom (WIS)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Medicine</h2>
+                                <div class="pane">
+                                    <p><i>เวชกรรมพื้นฐาน การปฐมพยาบาล การวินิจฉัยอาการเจ็บป่วย/พิษ</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ปฐมพยาบาลหรือช่วย stabilize ผู้ใกล้ตาย</li>
+                                        <li>ระบุพิษ/โรคจากอาการภายนอกและการตรวจ</li>
+                                        <li>ระบุสาเหตุการเสียชีวิตของศพที่เพิ่งพบ</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Medicine.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Nature.svg" />
+                    </div>
+                    <div class="desc">
+                        <h2>Nature</h2>
+                        <p>Ability: Intelligence (INT)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Nature</h2>
+                                <div class="pane">
+                                    <p><i>ความรู้โลกธรรมชาติ ภูมิประเทศ แร่/พืช/สัตว์ สภาพอากาศ และปรากฏการณ์ธรรมชาติ</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ระบุพืชมีพิษ/สมุนไพร และการใช้เบื้องต้น</li>
+                                        <li>คาดเดาภัยธรรมชาติจากรูปแบบก้อนเมฆ ลม กระแสน้ำ</li>
+                                        <li>รู้จักรัง สีทาง หรือพฤติกรรมสัตว์ในพื้นที่</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Nature.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Perception.svg" />
+                    </div>
+                    <div class="desc">
+                        <h2>Perception</h2>
+                        <p>Ability: Wisdom (WIS)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Perception</h2>
+                                <div class="pane">
+                                    <p><i>ใช้ประสาทสัมผัสเพื่อ “สังเกตพบ” สิ่งที่ซ่อน/เล็ก/ไกล/แผ่ว ได้ยิน เห็น ได้กลิ่น</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ได้ยินเสียงคุยกันลอดประตู/หน้าต่างปิด</li>
+                                        <li>จับเสียงฝีเท้าหรือการเคลื่อนไหวอย่างเงียบเชียบ</li>
+                                        <li>สังเกตเห็นวัตถุที่พรางตัว/กลืนกับฉากหลัง</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Perception.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Performance.svg" />
+                    </div>
+                    <div class="desc">
+                        <h2>Performance</h2>
+                        <p>Ability: Charisma (CHA)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Performance</h2>
+                                <div class="pane">
+                                    <p><i>การแสดง ดนตรี กวี การร่ายรำ และการดึงดูดผู้ชม</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>เล่นดนตรี/ขับร้อง/ร่ายรำเอาชนะใจผู้ชม</li>
+                                        <li>สร้างความสนใจ/ไขว้เขวให้ยามหรือฝูงชน</li>
+                                        <li>เล่าเรื่อง/ละคร/คาบาเรต์เพื่อหารายได้หรือข้อมูล</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Performance.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Persuasion.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Persuasion</h2>
+                        <p>Ability: Charisma (CHA)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Persuasion</h2>
+                                <div class="pane">
+                                    <p><i>โน้มน้าวแบบสุภาพ จริงใจ หรือมีเหตุผล เพื่อเปลี่ยนทัศนคติ/พฤติกรรมผู้อื่น</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ขอพบนายกอง/ขุนนางด้วยมารยาทที่เหมาะสม</li>
+                                        <li>เจรจาสงบศึก/แลกเปลี่ยนนักโทษ/ลดโทษ</li>
+                                        <li>สร้างมิตรภาพและความไว้วางใจระยะยาว</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Persuasion.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Religion.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Religion</h2>
+                        <p>Ability: Intelligence (INT)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Religion</h2>
+                                <div class="pane">
+                                    <p><i>เทววิทยา เทพเจ้า พิธีกรรม ศาสนวัตถุ สัญลักษณ์ศาสนา และตำนานศักดิ์สิทธิ์</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ระบุเทพ/ลัทธิจากสัญลักษณ์หรือบทสวด</li>
+                                        <li>ระบุข้อปฏิบัติ คำสาบาน หรือข้อห้ามของศาสนา</li>
+                                        <li>แปลความหมายพิธี/แท่นบูชา/ศาลเจ้าที่พบในซากโบราณ</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Religion.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Sleight_of_Hand.svg" />
+                    </div>
+                    <div class="desc">
+                        <h2>Sleight of Hand</h2>
+                        <p>Ability: Dexterity (DEX)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Sleight of Hand</h2>
+                                <div class="pane">
+                                    <p><i>มือไว ยักยอก หยิบ/ซ่อน/สับเปลี่ยนวัตถุโดยไม่ให้สังเกตเห็น</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ล้วงกระเป๋า/หยิบเหรียญหรือของชิ้นเล็ก </li>
+                                        <li>ซ่อนวัตถุไว้บนตัวโดยตรวจไม่พบ</li>
+                                        <li>แอบ “ยัด” วัตถุใส่ตัวคนอื่นโดยไม่รู้ตัว</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Sleight_of_Hand.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Stealth.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>Stealth</h2>
+                        <p>Ability: Dexterity (DEX)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Stealth</h2>
+                                <div class="pane">
+                                    <p><i>เคลื่อนที่อย่างเงียบและซ่อนตัวจากสายตา</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>หลบสายตายามด้วยเงา/สิ่งกำบัง</li>
+                                        <li>ลอบผ่านจุดตรวจโดยไม่ถูกรู้ตัว</li>
+                                        <li>ซุ่มเข้าใกล้เป้าหมายเพื่อเริ่มโจมตีอย่างเหนือความคาดหมาย</li>
+                                        <li>หลบซ่อน Hide: ทำการทอยเช็ค Dexterity (Stealth) เทียบค่า DC ของศัตรูที่จะหลบซ่อน</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Stealth.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/skills/Survival.svg" />
+                    </div>
+                    <div class="desc">
+                        <h2>Survival</h2>
+                        <p>Ability: Wisdom (WIS)</p>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Survival</h2>
+                                <div class="pane">
+                                    <p><i>เอาตัวรอดกลางแจ้ง แกะรอย หาอาหาร นำทาง หลีกเลี่ยงอันตรายธรรมชาติ</i></p>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: </p>
+                                    <ul>
+                                        <li>ตามรอยสัตว์/คนจากรอยเท้า เศษซาก และสัญญาณแวดล้อม</li>
+                                        <li>หาอาหาร/น้ำในถิ่นกันดาร และก่อไฟท่ามกลางฝน</li>
+                                        <li>เลือกเส้นทางปลอดภัย เลี่ยงบึงดูด/ทรายดูด/หิมะถล่ม</li>
+                                        <li>ทำอาหาร</li>
+                                    </ul>
+                                    <p class="icon">
+                                        <img src="icons/skills/Survival.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="environmental_effects">
             <h1>Environmental Effects</h1>
 
@@ -1937,6 +2721,7 @@
         <script src="control.js"></script>
     </body>
 </html>
+
 
 
 
