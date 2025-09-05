@@ -1,248 +1,253 @@
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* style_refactored.css */
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  /* style_refactored.css */
 
-/* ------------------------- Headings ------------------------- */
+  /* ------------------------- Headings ------------------------- */
 
-h1, h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-h1 { font-size: 120%; }
-h2 { font-size: 100%; }
+  h1, h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  h1 { font-size: 120%; }
+  h2 { font-size: 100%; }
 
-/* ปิดการขยายถ้าเป็นภาษาไทย */
-h1:lang(th):first-letter,
-h2:lang(th):first-letter {
-  font-size: inherit;
-}
+  /* ปิดการขยายถ้าเป็นภาษาไทย */
+  h1:lang(th):first-letter,
+  h2:lang(th):first-letter {
+    font-size: inherit;
+  }
 
-/* ค่า default (ภาษาอื่น ๆ เช่น อังกฤษ) */
-h1:first-letter { font-size: 150%; }
+  /* ค่า default (ภาษาอื่น ๆ เช่น อังกฤษ) */
+  h1:first-letter { font-size: 150%; }
 
-h1 {
-  margin: 0.5ex 0.5em 0.5ex 1.5em;
-}
-section:hover h1 { color: white; }
+  h1 {
+    margin: 0.5ex 0.5em 0.5ex 1.5em;
+  }
+  section:hover h1 { color: white; }
 
-/* ------------------------- Images ------------------------- */
+  /* ------------------------- Images ------------------------- */
 
-img { height: 4em; }
+  img { height: 4em; }
 
-/* เอฟเฟกต์เรืองแสงรุ้งแฟนตาซี */
-div.rule.active img {
-  transition: filter 0.6s ease-in-out;
-  animation: rainbowGlow 6s ease-in-out infinite alternate;
-}
+  /* เอฟเฟกต์เรืองแสงรุ้งแฟนตาซี */
+  div.rule.active img {
+    transition: filter 0.6s ease-in-out;
+    animation: rainbowGlow 6s ease-in-out infinite alternate;
+  }
 
-/* แอนิเมชันแสงเรืองแบบสีรุ้ง */
-@keyframes rainbowGlow {
-  0%   { filter: drop-shadow(0 0 8px rgba(255, 100, 100, 0.7))
-                 drop-shadow(0 0 16px rgba(255, 150, 150, 0.6))
-                 drop-shadow(0 0 28px rgba(255, 200, 200, 0.5)); }
-  20%  { filter: drop-shadow(0 0 8px rgba(255, 180, 100, 0.7))
-                 drop-shadow(0 0 16px rgba(255, 200, 120, 0.6))
-                 drop-shadow(0 0 28px rgba(255, 220, 180, 0.5)); }
-  40%  { filter: drop-shadow(0 0 8px rgba(255, 255, 120, 0.7))
-                 drop-shadow(0 0 16px rgba(255, 255, 150, 0.6))
-                 drop-shadow(0 0 28px rgba(255, 255, 200, 0.5)); }
-  60%  { filter: drop-shadow(0 0 8px rgba(120, 255, 120, 0.7))
-                 drop-shadow(0 0 16px rgba(150, 255, 150, 0.6))
-                 drop-shadow(0 0 28px rgba(200, 255, 200, 0.5)); }
-  80%  { filter: drop-shadow(0 0 8px rgba(120, 180, 255, 0.7))
-                 drop-shadow(0 0 16px rgba(150, 200, 255, 0.6))
-                 drop-shadow(0 0 28px rgba(200, 220, 255, 0.5)); }
-  100% { filter: drop-shadow(0 0 8px rgba(200, 120, 255, 0.7))
-                 drop-shadow(0 0 16px rgba(220, 150, 255, 0.6))
-                 drop-shadow(0 0 28px rgba(240, 200, 255, 0.5)); }
-}
+  /* แอนิเมชันแสงเรืองแบบสีรุ้ง */
+  @keyframes rainbowGlow {
+    0%   { filter: drop-shadow(0 0 8px rgba(255, 100, 100, 0.7))
+                  drop-shadow(0 0 16px rgba(255, 150, 150, 0.6))
+                  drop-shadow(0 0 28px rgba(255, 200, 200, 0.5)); }
+    20%  { filter: drop-shadow(0 0 8px rgba(255, 180, 100, 0.7))
+                  drop-shadow(0 0 16px rgba(255, 200, 120, 0.6))
+                  drop-shadow(0 0 28px rgba(255, 220, 180, 0.5)); }
+    40%  { filter: drop-shadow(0 0 8px rgba(255, 255, 120, 0.7))
+                  drop-shadow(0 0 16px rgba(255, 255, 150, 0.6))
+                  drop-shadow(0 0 28px rgba(255, 255, 200, 0.5)); }
+    60%  { filter: drop-shadow(0 0 8px rgba(120, 255, 120, 0.7))
+                  drop-shadow(0 0 16px rgba(150, 255, 150, 0.6))
+                  drop-shadow(0 0 28px rgba(200, 255, 200, 0.5)); }
+    80%  { filter: drop-shadow(0 0 8px rgba(120, 180, 255, 0.7))
+                  drop-shadow(0 0 16px rgba(150, 200, 255, 0.6))
+                  drop-shadow(0 0 28px rgba(200, 220, 255, 0.5)); }
+    100% { filter: drop-shadow(0 0 8px rgba(200, 120, 255, 0.7))
+                  drop-shadow(0 0 16px rgba(220, 150, 255, 0.6))
+                  drop-shadow(0 0 28px rgba(240, 200, 255, 0.5)); }
+  }
 
-/* ------------------------- Section Layout ------------------------- */
+  /* ------------------------- Section Layout ------------------------- */
 
-section {
-  margin: 2ex 2em;
-  border-radius: 1em;
-  padding: 0.5ex 1em;
-  background: #dedede;
-  transition: background 0.5s ease;
-}
+  section {
+    margin: 2ex 2em;
+    border-radius: 1em;
+    padding: 0.5ex 1em;
+    background: #dedede;
+    transition: background 0.5s ease;
+  }
 
-/* Hover สีตามประเภท */
-section#movement:hover            { background: #000080; } /* Navy */
-section#actions:hover             { background: #8B0000; } /* DarkRed */
-section#bonus_actions:hover       { background: #FFD700; } /* Gold */
-section#reactions:hover           { background: #FF8C00; } /* DarkOrange */
-section#conditions:hover          { background: #006400; } /* DarkGreen */
-section#hazards:hover             { background: #4B0082; } /* Indigo */
-section#environmental_effects:hover { background: #0acf00; } /* Green */
-section#skills:hover              { background: #a70088; } /* Magenta */
-section#asst:hover                { background: #009483; } /* Teal */
+  /* Hover สีตามประเภท */
+  section#movement:hover            { background: #000080; } /* Navy */
+  section#actions:hover             { background: #8B0000; } /* DarkRed */
+  section#bonus_actions:hover       { background: #FFD700; } /* Gold */
+  section#reactions:hover           { background: #FF8C00; } /* DarkOrange */
+  section#conditions:hover          { background: #006400; } /* DarkGreen */
+  section#hazards:hover             { background: #4B0082; } /* Indigo */
+  section#environmental_effects:hover { background: #0acf00; } /* Green */
+  section#skills:hover              { background: #a70088; } /* Magenta */
+  section#asst:hover                { background: #009483; } /* Teal */
 
-/* ------------------------- Shared Grid Layouts ------------------------- */
+  /* ------------------------- Shared Grid Layouts ------------------------- */
 
-#skills .list,
-#environmental_effects .list,
-#asst .list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 15px;
-  margin-bottom: 15px;
-}
+  #skills .list,
+  #environmental_effects .list,
+  #asst .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+  }
 
-#asst .list { gap: 5px; margin-bottom: 5px; }
+  #skills .rule,
+  #environmental_effects .rule,
+  #asst .rule {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.50);
+  }
 
-#skills .rule,
-#environmental_effects .rule,
-#asst .rule {
-  display: flex;
-  align-items: center;
-  border-radius: 12px;
-  padding: 10px 14px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.50);
-}
+  #skills .icon,
+  #environmental_effects .icon,
+  #asst .icon {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
 
-#skills .icon,
-#environmental_effects .icon,
-#asst .icon {
-  flex-shrink: 0;
-  margin-right: 10px;
-}
+  #skills div.pane p.icon,
+  #environmental_effects div.pane p.icon,
+  #asst div.pane p.icon,
+  div.pane p.icon {
+    margin: 2ex auto 0 auto;
+    text-align: center;
+  }
+  #skills div.pane p.icon img,
+  #environmental_effects div.pane p.icon img,
+  #asst div.pane p.icon img,
+  div.pane p.icon img {
+    height: 6em;      
+    display: block;
+    margin: 0 auto;
+  }
 
-#skills div.pane p.icon,
-#environmental_effects div.pane p.icon,
-#asst div.pane p.icon,
-div.pane p.icon {
-  margin: 2ex auto 0 auto;
-  text-align: center;
-}
-#skills div.pane p.icon img,
-#environmental_effects div.pane p.icon img,
-#asst div.pane p.icon img,
-div.pane p.icon img {
-  height: 6em;      
-  display: block;
-  margin: 0 auto;
-}
+  #skills .desc h2,
+  #asst .desc h2 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #skills .desc p,
+  #asst .desc p {
+    margin: 2px 0 0;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+  #environmental_effects > p {
+    background: #fff;   /* พื้นขาว */
+    color: #000;        /* ตัวอักษรดำ */
+    padding: 0.5ex 1em;/* เพิ่มระยะ */
+    margin: 2ex 2em;
+    border-radius: 1em; /* มุมโค้งถ้าต้องการ */
+  }
 
-#skills .desc h2,
-#asst .desc h2 {
-  margin: 0;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-#skills .desc p,
-#asst .desc p {
-  margin: 2px 0 0;
-  font-style: italic;
-  font-size: 0.9em;
-}
+  /* ------------------------- General Rules ------------------------- */
 
-/* ------------------------- General Rules ------------------------- */
+  div.list {
+    margin-bottom: 0.5ex;
+    border-radius: 1em;
+    padding: 0.5ex 0.5em;
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+  }
 
-div.list {
-  margin-bottom: 0.5ex;
-  border-radius: 1em;
-  padding: 0.5ex 0.5em;
-  background: white;
-  display: flex;
-  flex-flow: row wrap;
-}
+  div.rule {
+    flex: 1 0 15em;
+    margin: 0.5ex 0.5em;
+    border-radius: 0.5em;
+    padding: 0.5ex 0.5em;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  div.rule:hover { background: #dedede; }
 
-div.rule {
-  flex: 1 0 15em;
-  margin: 0.5ex 0.5em;
-  border-radius: 0.5em;
-  padding: 0.5ex 0.5em;
-  display: flex;
-  flex-flow: row nowrap;
-}
-div.rule:hover { background: #dedede; }
+  div.desc { margin-left: 1em; }
+  div.desc h2, div.desc p {
+    margin: 0;
+    padding: 0;
+  }
 
-div.desc { margin-left: 1em; }
-div.desc h2, div.desc p {
-  margin: 0;
-  padding: 0;
-}
+  /* ------------------------- Modals ------------------------- */
 
-/* ------------------------- Modals ------------------------- */
+  div.rule div.modal { display: none; }
+  div.rule.active div.modal { display: block; }
 
-div.rule div.modal { display: none; }
-div.rule.active div.modal { display: block; }
+  div.fixed {
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%;
+  }
+  div.blackout { background: black; opacity: 50%; }
+  div.position { display: flex; align-items: center; justify-content: center; }
+  div.window {
+    width: 30em;
+    border-radius: 1em;
+    padding: 0.5ex 1em;
+    background: black;
+  }
+  div.window h1, div.window h2 {
+    margin: 0.5ex 0.5em;
+    text-align: center;
+    color: white;
+  }
+  div.window h2 { font-size: 120%; }
 
-div.fixed {
-  position: fixed; left: 0; top: 0;
-  width: 100%; height: 100%;
-}
-div.blackout { background: black; opacity: 50%; }
-div.position { display: flex; align-items: center; justify-content: center; }
-div.window {
-  width: 30em;
-  border-radius: 1em;
-  padding: 0.5ex 1em;
-  background: black;
-}
-div.window h1, div.window h2 {
-  margin: 0.5ex 0.5em;
-  text-align: center;
-  color: white;
-}
-div.window h2 { font-size: 120%; }
+  /* Pane inside modal */
+  div.pane {
+    margin-bottom: 0.5ex;
+    border-radius: 1em;
+    padding: 0.5ex 0.5em;
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+  div.pane p { margin: 1ex 1em; }
 
-/* Pane inside modal */
-div.pane {
-  margin-bottom: 0.5ex;
-  border-radius: 1em;
-  padding: 0.5ex 0.5em;
-  background: white;
-  display: flex;
-  flex-direction: column;
-}
-div.pane p { margin: 1ex 1em; }
+  /* ------------------------- Rows ------------------------- */
 
-/* ------------------------- Rows ------------------------- */
+  .m-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 5px;
+  }
+  .m-row .left { font-weight: bold; }
+  .m-row .right { color: gray; }
 
-.m-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 4px 5px;
-}
-.m-row .left { font-weight: bold; }
-.m-row .right { color: gray; }
+  /* ------------------------- Footnotes ------------------------- */
 
-/* ------------------------- Footnotes ------------------------- */
+  p.footnotes { text-align: center; }
 
-p.footnotes { text-align: center; }
+  /* ------------------------- Switch Button ------------------------- */
 
-/* ------------------------- Switch Button ------------------------- */
+  #theme-toggle {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+  }
+  #theme-toggle:hover { background: #555; }
 
-#theme-toggle {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  padding: 8px 14px;
-  border: none;
-  border-radius: 8px;
-  background: #333;
-  color: white;
-  cursor: pointer;
-  font-size: 18px;
-  z-index: 1000;
-}
-#theme-toggle:hover { background: #555; }
+  /* ------------------------- Dark Mode ------------------------- */
 
-/* ------------------------- Dark Mode ------------------------- */
+  body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+  }
+  body.dark-mode section { background: #1e1e1e; }
+  body.dark-mode .list { background: #2a2a2a; }
+  body.dark-mode div.rule:hover { background: #333; }
+  body.dark-mode div.window { background: #222; }
+  body.dark-mode div.pane {
+    background: #333;
+    color: #ddd;
+  }
 
-body.dark-mode {
-  background: #121212;
-  color: #e0e0e0;
-}
-body.dark-mode section { background: #1e1e1e; }
-body.dark-mode .list { background: #2a2a2a; }
-body.dark-mode div.rule:hover { background: #333; }
-body.dark-mode div.window { background: #222; }
-body.dark-mode div.pane {
-  background: #333;
-  color: #ddd;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
