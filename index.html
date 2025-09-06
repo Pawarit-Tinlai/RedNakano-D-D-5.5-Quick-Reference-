@@ -292,7 +292,7 @@
                 </div>
             </div>
         </section>
-                <section id="actions">
+        <section id="actions">
             <div class="m-row">
                 <span class="left"><h1>Actions</h1></span>
                 <span class="right"><h1>1/turn</h1></span>
@@ -2424,6 +2424,173 @@
                 </div>
             </div>
         </section>
+        <section id="aoe">
+            <h1>Area of Effect</h1>
+            <div class="list">
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/Cone.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>กรวย (Cone)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Cone</h2>
+                                <div class="pane">
+                                    <p><i>กรวยเป็นพื้นที่ของผลกระทบที่ขยายออกเป็นเส้นตรงจาก <b>จุดกำเนิด</b> ในทิศทางที่ผู้ใช้เลือก ความกว้างของกรวยในแต่ละระยะจะเท่ากับระยะห่างจาก<b>จุดกำเนิด</b></i></p>
+                                    <ul>
+                                        <li>เช่น กรวยยาว 15 ฟุต จะมีความกว้าง 15 ฟุตที่ปลายสุด</li>
+                                        <li>เอฟเฟกต์จะกำหนดความยาวสูงสุดไว้</li>
+                                        <li>โดยปกติ <b>จุดกำเนิด</b>ไม่ถูกนับรวม เว้นแต่ผู้ใช้จะกำหนดให้รวมด้วย</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: เวทย์ Burning Hands สร้างกรวยไฟยาว 15 ฟุต ดาเมจสิ่งที่อยู่ในพื้นที่</p>
+                                    <p class="icon">
+                                        <img src="icons/Cone.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/Cube.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>ลูกบาศก์ (Cube)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Cube</h2>
+                                <div class="pane">
+                                    <p><i>ลูกบาศก์เป็นพื้นที่ที่ขยายออกเป็นเส้นตรงจาก <b>จุดกำเนิดที่อยู่บนด้านหนึ่งของลูกบาศก์</b> ความยาวแต่ละด้านถูกกำหนดโดยเอฟเฟกต์</i></p>
+                                    <ul>
+                                        <li>โดยปกติ <b>จุดกำเนิด</b>ไม่ถูกนับรวม เว้นแต่ผู้ใช้จะกำหนดให้รวมด้วย</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: เวทย์ Thunderwave สร้างลูกบาศก์พลังเสียง 15 ฟุตจากผู้ร่าย</p>
+                                    <p class="icon">
+                                        <img src="icons/Cube.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/Cylinder.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>ทรงกระบอก (Cylinder)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Cylinder</h2>
+                                <div class="pane">
+                                    <p><i>ทรงกระบอกเป็นพื้นที่ที่เริ่มจาก <b>จุดกำเนิดตรงกลางของด้านบนหรือด้านล่างของฐานวงกลม</b></i></p>
+                                    <ul>
+                                        <li>เอฟเฟกต์จะระบุ รัศมีของฐาน และ ความสูง</li>
+                                        <li><b>จุดกำเนิด ถูกรวม อยู่ในพื้นที่</b></li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: เวทย์ Flame Strike สร้างเสาทรงกระบอกไฟ รัศมี 10 ฟุต สูง 40 ฟุต</p>
+                                    <p class="icon">
+                                        <img src="icons/Cylinder.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/Emanation.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>การแผ่รัศมี (Emanation)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Emanation</h2>
+                                <div class="pane">
+                                    <p><i>การแผ่รัศมีคือพื้นที่ที่ขยายออกเป็นเส้นตรงจาก <b>สิ่งมีชีวิตหรือวัตถุ</b> ในทุกทิศทาง</i></p>
+                                    <ul>
+                                        <li>เอฟเฟกต์จะกำหนด ระยะที่แผ่ออกไป</li>
+                                        <li>การแผ่รัศมี <b>เคลื่อนไปพร้อมกับสิ่งที่เป็นต้นกำเนิด</b> เว้นแต่จะเป็นแบบฉับพลันหรือคงที่</li>
+                                        <li>โดยปกติ <b>จุดกำเนิด</b> ไม่ถูกนับรวม เว้นแต่ผู้ใช้จะกำหนดให้รวมด้วย</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: Aura of Protection ของ Paladin แผ่พลังบวกออกไปรอบตัว 10 ฟุต</p>
+                                    <p class="icon">
+                                        <img src="icons/Emanation.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/Line.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>เส้นตรง (Line)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Line</h2>
+                                <div class="pane">
+                                    <p><i>เส้นตรงเป็นพื้นที่ที่ขยายจาก <b>จุดกำเนิดเป็นเส้นทางตรง</b> ตามความยาวที่กำหนด โดยมีความกว้างตามที่ระบุไว้</i></p>
+                                    <ul>
+                                        <li>โดยปกติ <b>จุดกำเนิด</b>ไม่ถูกนับรวม เว้นแต่ผู้ใช้จะกำหนดให้รวมด้วย</li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: เวทย์ Lightning Bolt ยิงสายฟ้าเป็นเส้นยาว 100 ฟุต กว้าง 5 ฟุต</p>
+                                    <p class="icon">
+                                        <img src="icons/Line.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="icon">
+                        <img src="icons/Sphere.svg"/>
+                    </div>
+                    <div class="desc">
+                        <h2>ทรงกลม (Sphere)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Sphere</h2>
+                                <div class="pane">
+                                    <p><i>ทรงกลมเป็นพื้นที่ที่ขยายออกจาก <b>จุดกำเนิดในทุกทิศทาง</b></i></p>
+                                    <ul>
+                                        <li>เอฟเฟกต์จะระบุ <b>รัศมี</b> ของทรงกลม</li>
+                                        <li>จุดกำเนิด <b>ถูกรวมอยู่เสมอ</b></li>
+                                    </ul>
+                                    <p><b>ตัวอย่างการใช้งาน</b>: เวทย์ Fireball สร้างการระเบิดเป็นทรงกลมไฟ รัศมี 20 ฟุต</p>
+                                    <p class="icon">
+                                        <img src="icons/Sphere.svg"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="environmental_effects">
             <h1>Environmental Effects</h1>
 
@@ -2739,14 +2906,204 @@
                 </div>
             </div>
         </section>
+        <section id="weapon_mastery_properties">
+            <h1>Weapon Mastery Properties</h1>
+            <div class="list">
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Cleave (ฟันต่อเนื่อง)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Cleave</h2>
+                                <div class="pane">
+                                    <p><b>Mastery: Cleave (ฟันต่อเนื่อง)</b></p>
+                                    <p>หากคุณโจมตีสิ่งมีชีวิตด้วยการโจมตีประชิดและโดน คุณสามารถโจมตีสิ่งมีชีวิตอีกหนึ่งตัวที่อยู่ห่างจากตัวแรกไม่เกิน 5 ฟุต และยังอยู่ในระยะโจมตีของคุณได้หนึ่งครั้ง หากโจมตีโดน เป้าหมายตัวที่สองจะได้รับความเสียหายจากอาวุธ แต่จะ ไม่เพิ่มตัวปรับแต่งความสามารถ (Ability Modifier) เว้นแต่ค่านั้นเป็นค่าลบ คุณสามารถใช้การโจมตีเสริมนี้ได้เพียง หนึ่งครั้งต่อเทิร์น</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>: </p>
+                                    <ul>
+                                        <li>ขวานใหญ่ (Greataxe)</li>
+                                        <li>ง้าว (Halberd)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Graze (เฉี่ยวโดน)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Graze</h2>
+                                <div class="pane">
+                                    <p><b>Mastery: Graze (เฉี่ยวโดน)</b></p>
+                                    <p>หากคุณโจมตีด้วยอาวุธนี้พลาด เป้าหมายยังคงได้รับความเสียหายเท่ากับ ค่าตัวปรับแต่งความสามารถ ที่ใช้ในการโจมตี ความเสียหายนี้เป็นชนิดเดียวกับที่อาวุธก่อให้เกิดขึ้น และจะเพิ่มขึ้นได้ก็ต่อเมื่อค่าตัวปรับแต่งสูงขึ้น</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>: </p>
+                                    <ul>
+                                        <li>หอกดาบ (Glaive)</li>
+                                        <li>ดาบใหญ่ (Greatsword)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Nick (ฟันเร็ว)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Nick</h2>
+                                <div class="pane">
+                                    <p><b>Mastery: Nick (ฟันเร็ว)</b></p>
+                                    <p>เมื่อใช้อาวุธที่มีคุณสมบัติ Light การโจมตีเสริม (Off-hand Attack) สามารถทำได้โดยเป็นส่วนนึงของ Action หลัก แทนที่จะเป็น Bonus Action อย่างปกติ แต่คุณสามารถทำได้เพียง หนึ่งครั้งต่อเทิร์น</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>: </p>
+                                    <ul>
+                                        <li>กริช (Dagger)</li>
+                                        <li>ค้อนเบา (Light Hammer)</li>
+                                        <li>ดาบโค้ง (Scimitar)</li>
+                                        <li>เคียวเกี่ยวข้าว (Sickle)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Push (ผลัก)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Push</h2>
+                                <div class="pane">
+                                    <p><b>Mastery: Push (ผลัก)</b></p>
+                                    <p>หากคุณโจมตีโดนสิ่งมีชีวิตด้วยอาวุธนี้ คุณสามารถผลักมันออกไปได้ไกลสุด 10 ฟุต ในทิศทางตรงจากคุณ หากเป้าหมายมีขนาด Large หรือต่ำกว่า</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>: </p>
+                                    <ul>
+                                        <li>กระบองใหญ่ (Greatclub)</li>
+                                        <li>หอกยาว (Pike)</li>
+                                        <li>ค้อนสงคราม (Warhammer)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Sap (อ่อนแรง)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Sap</h2>
+                                <div class="pane">
+                                    <p><b>Mastery: Sap (อ่อนแรง)</b></p>
+                                    <p>หากคุณโจมตีโดนสิ่งมีชีวิตด้วยอาวุธนี้ สิ่งมีชีวิตนั้นจะได้รับสถานะ <b>Disadvantage</b> ในการโจมตีครั้งถัดไปก่อนที่เทิร์นถัดไปของคุณจะเริ่มขึ้น</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>: </p>
+                                    <ul>
+                                        <li>ลูกตุ้ม (Flail)</li>
+                                        <li>ดาบยาว (Longsword)</li>
+                                        <li>กระบองเหล็ก (Mace)</li>
+                                        <li>กระบองดาวรุ่ง (Morningstar)</li>
+                                        <li>หอก (Spear)</li>
+                                        <li>ค้อนเจาะสงคราม (War Pick)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Slow (เชื่องช้า)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Slow</h2>
+                                <div class="pane">
+                                    <p><b>Mastery: Slow (เชื่องช้า)</b></p>
+                                    <p>หากคุณโจมตีโดนและสร้างความเสียหายด้วยอาวุธนี้ คุณสามารถลด ความเร็ว (Speed) ของเป้าหมายลง 10 ฟุต จนถึงต้นเทิร์นถัดไปของคุณ หากเป้าหมายถูกโจมตีด้วยอาวุธที่มีคุณสมบัตินี้มากกว่าหนึ่งครั้ง การลดความเร็วจะไม่เกิน 10 ฟุต</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>: </p>
+                                    <ul>
+                                        <li>กระบองไม้ (Club)</li>
+                                        <li>หอกขว้าง (Javelin)</li>
+                                        <li>แส้ (Whip)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Topple (โค่นล้ม)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Topple</h2>
+                                <div class="pane">
+                                    <p><b>Mastery: Topple (โค่นล้ม)</b></p>
+                                    <p>หากคุณโจมตีโดนสิ่งมีชีวิตด้วยอาวุธนี้ คุณสามารถบังคับให้มันทำ Constitution Saving Throw<br>
+                                        โดยมีค่า DC = 8 + ตัวปรับแต่งความสามารถที่ใช้โจมตี + Proficiency Bonus<br>
+                                        หากไม่ผ่านการทดสอบ เป้าหมายจะได้รับสภาพล้มคว่ำ (Prone)</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>: </p>
+                                    <ul>
+                                        <li>ขวานสงคราม (Battleaxe)</li>
+                                        <li>หอกใหญ่ (Lance)</li>
+                                        <li>ค้อนสงครามสองมือ (Maul)</li>
+                                        <li>กระบองยาว (Quarterstaff)</li>
+                                        <li>ตรีศูล (Trident)</li>
+                                        <li>คทา (Staff)</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Vex (ก่อกวน)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Vex</h2>
+                                <div class="pane">
+                                    <p><b>Mastery: Vex (ก่อกวน)</b></p>
+                                    <p>หากคุณโจมตีโดนสิ่งมีชีวิตและสร้างความเสียหาย คุณจะได้รับ <b>Advantage</b> ในการโจมตีครั้งถัดไปกับเป้าหมายเดิม ก่อนสิ้นสุดเทิร์นถัดไปของคุณ</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>: </p>
+                                    <ul>
+                                        <li>ขวานมือ (Handaxe)</li>
+                                        <li>เรเปียร์ (Rapier)</li>
+                                        <li>ดาบสั้น (Shortsword)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <script src="control.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
