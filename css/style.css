@@ -67,30 +67,42 @@
   }
 
   /* Hover สีตามประเภท */
-  section#movement:hover            { background: #000080; } /* Navy */
-  section#actions:hover             { background: #980000; } /* DarkRed */
-  section#bonus_actions:hover       { background: #FFD700; } /* Gold */
-  section#reactions:hover           { background: #FF8C00; } /* DarkOrange */
-  section#conditions:hover          { background: #006400; } /* DarkGreen */
-  section#hazards:hover             { background: #4B0082; } /* Indigo */
-  section#environmental_effects:hover { background: #0acf00; } /* Green */
-  section#skills:hover              { background: #a70088; } /* Magenta */
-  section#asst:hover                { background: #009483; } /* Teal */
+  section#movement:hover                           { background: #000080; } /* Navy */
+  section#actions:hover                            { background: #980000; } /* DarkRed */
+  section#bonus_actions:hover                      { background: #FFD700; } /* Gold */
+  section#reactions:hover                          { background: #FF8C00; } /* DarkOrange */
+  section#conditions:hover                         { background: #006400; } /* DarkGreen */
+  section#hazards:hover                            { background: #4B0082; } /* Indigo */
+  section#environmental_effects:hover              { background: #0acf00; } /* Green */
+  section#skills:hover                             { background: #a70088; } /* Magenta */
+  section#asst:hover                               { background: #009483; } /* Teal */
+  section#aoe:hover                                { background: #000000; } /* Black */
+  section#weapon_mastery_properties:hover          { background: #944f00; } /* Brown */
 
   /* ------------------------- Shared Grid Layouts ------------------------- */
 
   #skills .list,
   #environmental_effects .list,
-  #asst .list {
+  #asst .list,
+  #aoe .list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 15px;
     margin-bottom: 15px;
   }
 
+  #weapon_mastery_properties .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
   #skills .rule,
   #environmental_effects .rule,
-  #asst .rule {
+  #weapon_mastery_properties .rule,
+  #asst .rule,
+  #aoe .rule {
     display: flex;
     align-items: center;
     border-radius: 12px;
@@ -100,7 +112,8 @@
 
   #skills .icon,
   #environmental_effects .icon,
-  #asst .icon {
+  #asst .icon,
+  #aoe .icon {
     flex-shrink: 0;
     margin-right: 10px;
   }
@@ -108,6 +121,7 @@
   #skills div.pane p.icon,
   #environmental_effects div.pane p.icon,
   #asst div.pane p.icon,
+  #aoe div.pane p.icon,
   div.pane p.icon {
     margin: 2ex auto 0 auto;
     text-align: center;
@@ -115,6 +129,7 @@
   #skills div.pane p.icon img,
   #environmental_effects div.pane p.icon img,
   #asst div.pane p.icon img,
+  #aoe div.pane p.icon img,
   div.pane p.icon img {
     height: 6em;      
     display: block;
@@ -122,14 +137,16 @@
   }
 
   #skills .desc h2,
-  #asst .desc h2 {
+  #asst .desc h2,
+  #aoe .desc h2{
     margin: 0;
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
   }
   #skills .desc p,
-  #asst .desc p {
+  #asst .desc p,
+  #aoe .desc p {
     margin: 2px 0 0;
     font-style: italic;
     font-size: 0.9em;
@@ -275,5 +292,3 @@
   }
 
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
