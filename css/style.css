@@ -76,7 +76,8 @@
   section#environmental_effects:hover              { background: #0acf00; } /* Green */
   section#skills:hover                             { background: #a70088; } /* Magenta */
   section#asst:hover                               { background: #009483; } /* Teal */
-  section#aoe:hover                                { background: #000000; } /* Black */
+  section#aoe:hover                                { background: #ffa8f8; } /* Pink */
+  section#creaturetype:hover                       { background: #000000; } /* Black */
   section#weapon_mastery_properties:hover          { background: #944f00; } /* Brown */
 
   /* ------------------------- Shared Grid Layouts ------------------------- */
