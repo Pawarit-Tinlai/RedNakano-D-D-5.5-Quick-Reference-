@@ -79,6 +79,7 @@
   section#aoe:hover                                { background: #ffa8f8; } /* Pink */
   section#or:hover                                 { background: #ffa8a8; } /* Pink */
   section#creaturetype:hover                       { background: #000000; } /* Black */
+  section#weapon_properties:hover                  { background: #b87324; } /* Brown */
   section#weapon_mastery_properties:hover          { background: #944f00; } /* Brown */
 
   /* ------------------------- Shared Grid Layouts ------------------------- */
@@ -94,7 +95,8 @@
     margin-bottom: 15px;
   }
 
-  #weapon_mastery_properties .list {
+  #weapon_mastery_properties .list,
+  #weapon_properties .list{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 5px;
@@ -104,6 +106,7 @@
   #skills .rule,
   #environmental_effects .rule,
   #weapon_mastery_properties .rule,
+  #weapon_properties .rule,
   #asst .rule,
   #or .rule,
   #aoe .rule {
