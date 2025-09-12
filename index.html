@@ -3166,6 +3166,294 @@
                 </div>
             </div>
         </section>
+        <section id="weapon_properties">
+            <h1>Weapon Properties</h1>
+            <div class="list">
+        
+                <!-- Ammunition -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Ammunition (กระสุน)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Ammunition</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Ammunition (กระสุน)</b></p>
+                                    <p>คุณสามารถใช้ อาวุธที่มีคุณสมบัติ Ammunition ในการโจมตีระยะไกลได้ก็ต่อเมื่อคุณมีลูกกระสุนที่เหมาะสมสำหรับมัน ประเภทกระสุนที่ต้องใช้ระบุไว้พร้อมกับช่วงระยะของอาวุธ การโจมตีแต่ละครั้งจะใช้กระสุนไป 1 ชิ้น การดึงกระสุนถือเป็นส่วนหนึ่งของการโจมตี (คุณต้องมีมือว่างเพื่อบรรจุอาวุธที่ใช้มือเดียว) หลังการต่อสู้ คุณสามารถใช้เวลา 1 นาที เพื่อเก็บกระสุนคืนได้ครึ่งหนึ่ง (ปัดเศษลง) ส่วนที่เหลือถือว่าสูญหาย</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Shortbow (ธนูสั้น)</li>
+                                        <li>Longbow (ธนูยาว)</li>
+                                        <li>Crossbow (หน้าไม้)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Finesse -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Finesse (พลิ้วไหว)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Finesse</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Finesse (พลิ้วไหว)</b></p>
+                                    <p>เมื่อโจมตีด้วย อาวุธที่มีคุณสมบัติ Finesse คุณสามารถเลือกใช้ตัวปรับค่า Strength หรือ Dexterity กับการทอยโจมตีและความเสียหายได้ แต่ต้องใช้ตัวปรับค่าเดียวกันทั้งสองการทอย</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Dagger (กริช)</li>
+                                        <li>Rapier (กระบี่)</li>
+                                        <li>Shortsword (ดาบสั้น)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Heavy -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Heavy (หนัก)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Heavy</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Heavy (หนัก)</b></p>
+                                    <p>คุณจะมี Disadvantage ในการโจมตีด้วย อาวุธ Heavy หากอาวุธนั้นเป็นอาวุธประชิดและค่า Strength ของคุณน้อยกว่า 13 หรือหากเป็นอาวุธระยะไกลและค่า Dexterity ของคุณน้อยกว่า 13</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Greatsword (ดาบใหญ่)</li>
+                                        <li>Maul (ค้อนไม้สองมือ)</li>
+                                        <li>Heavy Crossbow (หน้าไม้หนัก)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Improvised Weapons -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Improvised Weapons</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Improvised Weapons</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Improvised Weapons (อาวุธเฉพาะกิจ)</b></p>
+                                    <p>หากคุณใช้วัตถุ เช่น ขาโต๊ะ กระทะ หรือขวด เป็นอาวุธ ให้ดูคำอธิบาย “Improvised Weapons” ในกฎเพิ่มเติม นอกจากนี้ หากคุณใช้อาวุธในลักษณะผิดปกติ เช่น ใช้อาวุธระยะไกลโจมตีแบบประชิด ก็ให้ดูในกฎนั้นเช่นกัน</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Table Leg (ขาโต๊ะ)</li>
+                                        <li>Frying Pan (กระทะ)</li>
+                                        <li>Bottle (ขวด)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Light -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Light (เบา)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Light</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Light (เบา)</b></p>
+                                    <p>เมื่อคุณใช้ Action: Attack บนเทิร์นของคุณและโจมตีด้วยอาวุธ Light คุณสามารถทำการโจมตีพิเศษอีกครั้งด้วย Bonus Action ในเทิร์นเดียวกัน การโจมตีพิเศษนี้ต้องใช้อาวุธ Light คนละชิ้น และคุณ จะไม่นำค่าตัวปรับความสามารถมาบวกกับความเสียหาย เว้นแต่ตัวปรับนั้นเป็นค่าลบ
+                                        ตัวอย่าง: คุณสามารถถือ Shortsword มือหนึ่ง และ Dagger อีกมือหนึ่ง โจมตีด้วย Action + Bonus Action ได้ แต่การโจมตีด้วย Bonus Action จะไม่บวกค่า Strength/Dexterity เข้ากับความเสียหาย (นอกจากค่าตัวปรับติดลบ)</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Dagger (กริช)</li>
+                                        <li>Shortsword (ดาบสั้น)</li>
+                                        <li>Scimitar (ดาบโค้ง)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Loading -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Loading (บรรจุ)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Loading</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Loading (บรรจุ)</b></p>
+                                    <p>เมื่อใช้อาวุธที่มีคุณสมบัติ Loading คุณสามารถยิงกระสุนได้เพียง 1 นัดต่อ Action, Bonus Action, หรือ Reaction แม้ว่าปกติคุณจะสามารถทำการโจมตีหลายครั้งก็ตาม</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Hand Crossbow (หน้าไม้พกพา)</li>
+                                        <li>Light Crossbow (หน้าไม้เบา)</li>
+                                        <li>Heavy Crossbow (หน้าไม้หนัก)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Range -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Range (ระยะ)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Range</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Range (ระยะ)</b></p>
+                                    <p>อาวุธระยะไกลจะแสดง ระยะการใช้งาน (Range) ในวงเล็บตามหลังคุณสมบัติ Ammunition หรือ Thrown โดยจะแสดงตัวเลขสองค่า</p>
+                                    <ul>
+                                        <li>ค่าแรก = ระยะปกติ (ฟุต)</li>
+                                        <li>ค่าที่สอง = ระยะไกล (ฟุต)</li>
+                                    </ul>
+                                    <p>หากโจมตีเป้าหมายเกินระยะปกติ คุณจะมี Disadvantage และคุณไม่สามารถโจมตีเป้าหมายที่อยู่นอกระยะไกลได้</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Shortbow (ธนูสั้น, 80/320)</li>
+                                        <li>Longbow (ธนูยาว, 150/600)</li>
+                                        <li>Light Crossbow (หน้าไม้เบา, 80/320)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Reach -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Reach (ยืดยาว)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Reach</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Reach (ยืดยาว)</b></p>
+                                    <p>อาวุธ Reach จะเพิ่มระยะโจมตีของคุณ +5 ฟุต ทั้งในการโจมตีปกติ และในการคำนวณระยะสำหรับ Opportunity Attack</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Whip (แส้)</li>
+                                        <li>Halberd (ง้าว)</li>
+                                        <li>Glaive (ทวนยาว)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Thrown -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Thrown (ขว้าง)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Thrown (ขว้าง)</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Thrown (ขว้าง)</b></p>
+                                    <p>หากอาวุธมีคุณสมบัติ Thrown คุณสามารถขว้างมันเพื่อทำการโจมตีระยะไกลได้ และสามารถดึงอาวุธนั้นออกมาเป็นส่วนหนึ่งของการโจมตี หากอาวุธนั้นเป็น อาวุธประชิด คุณจะใช้ค่าตัวปรับเดียวกันกับการโจมตีประชิดปกติในการทอยโจมตีและความเสียหาย</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Dagger (กริช)</li>
+                                        <li>Handaxe (ขวานมือ)</li>
+                                        <li>Spear (หอก)</li>
+                                        <li>Javelin (หอกขว้าง)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Two-Handed -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Two-Handed (สองมือ)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Two-Handed</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Two-Handed (สองมือ)</b></p>
+                                    <p>อาวุธ Two-Handed ต้องใช้สองมือในการโจมตีเสมอ</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Greatsword (ดาบใหญ่)</li>
+                                        <li>Maul (ค้อนไม้สองมือ)</li>
+                                        <li>Longbow (ธนูยาว)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Versatile -->
+                <div class="rule">
+                    <div class="desc">
+                        <h2>Versatile (อเนกประสงค์)</h2>
+                    </div>
+                    <div class="modal">
+                        <div class="fixed blackout"></div>
+                        <div class="fixed position">
+                            <div class="window">
+                                <h2>Versatile</h2>
+                                <div class="pane">
+                                    <p><b>Properties: Versatile (อเนกประสงค์)</b></p>
+                                    <p>อาวุธ Versatile สามารถใช้งานได้ทั้งมือเดียวหรือสองมือ โดยจะมีค่าความเสียหายในวงเล็บกำกับไว้ หากใช้อาวุธนี้ด้วยสองมือในการโจมตีประชิด จะใช้อัตราความเสียหายตามค่าที่ระบุในวงเล็บ</p>
+                                    <p><b>ตัวอย่างอาวุธ</b>:</p>
+                                    <ul>
+                                        <li>Longsword (ดาบยาว, 1d8/1d10)</li>
+                                        <li>Quarterstaff (กระบอง, 1d6/1d8)</li>
+                                        <li>Warhammer (ค้อนสงคราม, 1d8/1d10)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
         <section id="weapon_mastery_properties">
             <h1>Weapon Mastery Properties</h1>
             <div class="list">
